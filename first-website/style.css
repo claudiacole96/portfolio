@@ -1,0 +1,264 @@
+* {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+h1 {
+    padding-left: 15px;
+    font-size: 100px;
+}
+#logo {
+    height: 100px;
+    border-radius: 50%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+a {
+    color: lightblue;
+    font-size: 30px;
+    text-decoration: none;
+}
+main {
+    margin: 5px;
+}
+#important-note {
+    font-size: 15px;
+    font-style: italic;
+}
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+i {
+    padding: 5px;
+}
+.slideshow {
+    max-width: 100%;
+    position: relative;
+}
+.mySlides > img {
+    width: 100%;
+    height: 500px;
+}
+#slideOne {
+    display: block;
+}
+#slide-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.caption {
+    color: white;
+    background-color: black;
+    font-size: 35px;
+    padding: 8px 0px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #5cc3c4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+#news {
+    margin: 5px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+ul {
+    font-size: 18px;
+}
+li > span {
+    font-style: italic;
+    font-size: 16px;
+    color: indigo;
+}
+#about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-img {
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 50%;
+    margin: 25px;
+}
+.flex-box > img {
+    width: 100%;
+    margin: 5px;
+    border: 5px solid black;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    font-size: 25px;
+    margin: auto;
+}
+td {
+    vertical-align: top;
+}
+th {
+    background-color: black;
+    color: white;
+}
+#calendar {
+    width: 100%;
+}
+.left-header {
+    font-size: 40px;
+}
+.footer-spacer {
+    height: 55px;
+    width: 100%;
+}
+#flex-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.price {
+    color: indigo;
+}
+
+@media only screen and (min-width: 1150px){
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    header {
+        grid-column: 1/8;
+        border-bottom: 10px solid black;
+    }
+    nav {
+        grid-column: 8/13;
+        align-items: flex-end;
+        background-color: white;
+        border-bottom: 10px solid black;
+    }
+    main {
+        grid-column: 1/-1;
+    }
+    footer {
+        grid-column: 1/-1;
+    }
+    .mySlides > img {
+        height: 700px;
+    }
+    #news {
+        display: flex;
+        justify-content: space-around;
+    }
+    li {
+        font-size: 30px;
+    }
+    #about-img {
+        width: 400px;
+    }
+    #about-main > p {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    #contact-text {
+        width: 75%;
+        margin: auto;
+    }
+    .left-header {
+        display: block;
+        text-align: center;
+    }
+    nav > a {
+        padding: 15px;
+    }
+    nav > a:hover {
+        background-color: black;
+        border-radius: 20px 20px 0 0;
+        color: lightblue;
+    }
+    a:hover {
+        color: indigo;
+    }
+    .flex-box {
+        display: flex;
+
+    }
+    .flex-box > img {
+        width: 50%;
+    }
+    .flex-box > table {
+        width: 50%;
+    }
+    #calendar {
+        width: 80%;
+        margin: auto;
+    }
+    
+}

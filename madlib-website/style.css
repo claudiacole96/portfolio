@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://img.freepik.com/free-vector/animals-theme-template-vector-illustration_53876-56693.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 5px;
+    height: 400px;
+}
+input {
+    border-radius: 5px;
+    border: 3px solid black;
+}
+.onefour {grid-column: 1/6;}
+.twofour {grid-column: 6/11;}
+.threefour {grid-column: 11/16;}
+.four {grid-column: 16/21;}
+.onefive {grid-column: 1/5;}
+.twofive {grid-column: 5/9;}
+.threefive {grid-column: 9/13;}
+.fourfive {grid-column: 13/17;}
+.five {grid-column: 17/21;}
+#submit-button { 
+    grid-column: 1/-1;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#submit-button:hover {
+    background-color: black;
+    color: yellow;
+}
+
+#mad-lib {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    display: none;
+}
+p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+span {
+    font-size: 28px;
+    font-weight: bold;
+    color: blue;
+}
+i {
+    font-size: 25px;
+    color: lightgray;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+i:hover {
+    color: yellow;
+}
+
+#play-again {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: none;
+}
+footer {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+a:hover {
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+}

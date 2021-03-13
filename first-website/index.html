@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Igloo Lounge</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <script src="./script.js"></script>
+        <script src="https://kit.fontawesome.com/bea5aeebba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="penguin.jpg" alt="">
+            <h1>Igloo Lounge</h1>
+        </header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./tournament.html">Tournaments</a>
+            <a href="./events.html">Events</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <main>
+            <span id="important-note">Important Note: We will be open late and handing out candy on Halloween. Covid won't stop us! Everyone Welcome</span>
+            <div class="slideshow"> <!--Featured item slideshow-->
+                <div id=slideOne class="mySlides fade"> 
+                    <img src="./booster-pack.jpg">
+                    <div class="caption">This Week Only! Buy Two Get One Free!</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./friday-night-magic.jpg">
+                    <div class="caption">Bring a Friend this Friday 1/2 off!</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./smash-tournament.jpg">
+                    <div id="smash" class="caption">
+                        <span>Last Week's Results </span><a href="./tournament.html"> Here!</a>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(+1)">&#10095</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <h2>Must Know Deals and Events</h2>
+            <div id="news">
+                <div>
+                    <ul>
+                        <li>Adventure League D&D <span>Tuesdays & Thursdays</span></li>
+                        <li>Scheduled D&D Sessions <span>Alternating Sundays</span></li>                            <li>Magic Draft Tournaments <span>Every Friday</span></li>
+                        <li>Pokemon VGC & TCG Tournaments <span>Every Tuesday</span></li>
+                        <li>Free Play <span>Mondays & Saturdays</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Pokemon & Magic Booster Packs <span>Buy Two Get One</span></li>
+                        <li>Bring a Friend on Saturday <span>Half off Free Play</span></li>
+                        <li>Winter Pass: Unlimited Play <span>$35 November-January</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="footer-spacer"></div>
+        <footer>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i>Instagram</a>
+            <a href="https://www.twitch.tv/bushidopengu"><i class="fab fa-twitch"></i>Twitch</a>
+            <a href="contact.html">Contact</a>
+        </footer>
+    </body>
+</html>

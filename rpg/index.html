@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Play Simple RPG Game</h1>
+    </header>
+    <main>
+        <div id="playButtonDiv">
+            <button id="playButton">Play Game</button>
+        </div>
+        <div id="startScreen">
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 45%;">
+                    <h2>Well, hello there young adventurer. Welcome to the land of Fizz!</h2>
+                    <h2>I haven't seen you around here before, what is your name?</h2>
+                </div>
+                <div style="width: 45%;">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <form id="playerNameForm" action="submit">
+                <input type="text" name="playerName" id="playerName" placeholder="Enter Name">
+                <button id="playerNameButton">Continue</button>
+            </form>
+        </div>
+        <div id="startChooseEquip"></div>
+        <div id="messageScreen">
+            <div id="message"></div>
+            <div id=""></div>
+        </div>
+        <div id="mainPlayScreen"></div>
+        <div id="battleScreen"></div>
+    </main>
+    <footer>
+        <h6>Web Dev Student 2021</h6>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
