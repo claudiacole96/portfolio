@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/43b0482c96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Portfolio Site</title>
+</head>
+<body>
+    <nav>
+        <ul class="page-nav">
+            <a class="active-page" href="./index.html">Claudia Evans</a>
+            <a href="./about.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </ul>
+        <ul class="icon-nav">
+            <a href="https://www.linkedin.com/in/claudiacole96/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/claudiacole1996"><i class="fab fa-facebook-square"></i></a>
+        </ul>
+    </nav>
+    <main>
+        <div id="main-slide-div">
+            <div class="slideshow"> <!--Featured item slideshow-->
+                <div id=slide-one class="mySlides fade">
+                    <div id="slideone-div">
+                        <div id="slideone-left">
+                            <h3 id="main-hello">Hello World!</h3>
+                            <h1 id="main-header">I'm Claudia</h1>
+                            <h4 id="main-mission">
+                                <b style="color: white;">Frontend Web Developer, with excellent attention to
+                                detail while implementing creative and innovative designs.</b>
+                                <br><br>HTML, CSS, JavaScript, React.js, Express
+                            </h4>
+                            <button id="main-resume-button" onclick="window.location.href='./projects.html'">PORTFOLIO</button>
+                        </div>
+                        <div id="slideone-right">
+                            <img id="main-slideone-img" src="./images/me1.png" alt="">
+                        </div>
+                    </div> 
+                </div>
+                <div id="slide-two" class="mySlides fade">
+                    <div id="slidetwo-div">
+                        <div id="slidetwo-left">
+                            <img class="slidetwo-img" src="./images/image_64834416.JPG" alt="">
+                            <h2 class="slidetwo-header">Want to know more about me?</h2>
+                            <a class="slidetwo-button" href="./about.html">CLICK HERE</a>
+                        </div>
+                        <div id="slidetwo-center">
+                            <img class="slidetwo-img" src="./images/coding background image.jpg" alt="">
+                            <h2 class="slidetwo-header">Want to see what I've made?</h2>
+                            <a class="slidetwo-button" href="./projects.html">CLICK HERE</a>
+                        </div>
+                        <div id="slidetwo-right">
+                            <img class="slidetwo-img" src="./images/sincerely-media-3KEFp35FVB0-unsplash.jpg" alt="">
+                            <h2 class="slidetwo-header">Like what you see?</h2>
+                            <a class="slidetwo-button" href="./contact.html">HIRE ME</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(+1)">&#10095</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+        <div id="main-text">
+            <h2>Welcome</h2>
+            <p>"What <b>sets you apart</b> can sometimes feel like a burden and it's not.
+                <br>And a lot of the time, it's <b>what makes you great</b>."</p>
+        </div>
+    </main>
+    <footer>
+        <h6>Your future developer 2021</h6>
+    </footer>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

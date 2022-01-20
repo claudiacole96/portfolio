@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/43b0482c96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Portfolio Site</title>
+</head>
+<body>
+    <nav>
+        <ul class="page-nav">
+            <a href="./index.html">Claudia Evans</a>
+            <a href="./about.html">About</a>
+            <a class="active-page" href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </ul>
+        <ul class="icon-nav">
+            <a href="https://www.linkedin.com/in/claudiacole96/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/claudiacole1996"><i class="fab fa-facebook-square"></i></a>
+        </ul>
+    </nav>
+    <main>
+        <div id="projects-div">
+            <div id="project-one" class="project-demo">
+                <img class="project-img" src="./images/madlib1.png" alt="">
+                <h2 class="project-header">Madlib Generator</h2>
+                <p class="project-p">Using simple DOM manipulation, this single page web 
+                    application takes user input values, and places them within a hidden story 
+                    to create a full functioning madlib generator.</p>
+                <ul class="project-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+                <button onclick="window.location.href='https://github.com/claudiacole96/portfolio/tree/main/madlib-website'" class="project-button">See Code</button>
+            </div>
+            <div id="project-two" class="project-demo">
+                <img class="project-img" src="./images/cardshop1.png" alt="">
+                <h2 class="project-header">Card Shop Website</h2>
+                <p class="project-p">Using HTML and CSS to properly style a local business website 
+                    where multiple pages show contact information, about their store, scheduled events, 
+                    and tournament updates.
+                </p>
+                <ul class="project-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+                <button onclick="window.location.href-'https://github.com/claudiacole96/portfolio/tree/main/first-website'" class="project-button">See Code</button>
+            </div>
+            <div id="project-three" class="project-demo">
+                <img class="project-img" src="./images/APIReactApp.png" alt="">
+                <h2 class="project-header">API React Web Application</h2>
+                <p class="project-p">Using a To-Do list API, this single page React Web 
+                    Application integrates the CRUD method to properly post, update, delete, 
+                    and receive data.
+                </p>
+                <ul class="project-skills">
+                    <li>REACT.JS</li>
+                    <li>EXPRESS.JS</li>
+                    <li>API</li>
+                </ul>
+                <button onclick="window.location.href-'https://github.com/claudiacole96/fsw125/tree/master/week5/frontend-http-requests'" class="project-button">See Code</button>
+            </div>
+            <div id="project-four" class="project-demo">
+                <img class="project-img" src="./images/harrypotteralumni.png" alt="">
+                <h2 class="project-header">Harry Potter Alumni</h2>
+                <p class="project-p">A single page React Web Application using Express and CRUD 
+                    to recieve, edit, add, and delete data. This application also has a filter 
+                    feature to filter data by type.
+                </p>
+                <ul class="project-skills">
+                    <li>REACT.JS</li>
+                    <li>EXPRESS.JS</li>
+                </ul>
+                <button onclick="window.location.href-'https://github.com/claudiacole96/fsw125/tree/master/week7'" class="project-button">See Code</button>
+            </div>
+        </div>
+        <div id="project-showcase">
+            <div id="show-project-one" class="project-show"></div>
+        </div>
+    </main>
+    <footer>
+        <h6>Your future developer 2021</h6>
+    </footer>
+</body>
+</html>

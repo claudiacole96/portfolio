@@ -1,0 +1,564 @@
+/*mobile first responsive web design*/
+@media only screen and (min-width: 300px) {
+    * {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+    }
+    body {
+        background-image: url("./background-photo.jpg");
+        background-color: black;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-shadow: 0 0 2px black;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+    .page-nav {
+        width: 80%;
+    }
+    .icon-nav {
+        width: 20%;
+    }
+    a {
+        text-decoration: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    a:hover, i:hover {
+        color: lightgray;
+    }
+    .active-page {
+        color: turquoise;
+        font-size: 14px;
+        text-shadow: 0 0 10px black;
+    }
+    .slideshow {
+        max-width: 100%;
+        position: relative;
+    }
+    .mySlides {
+        width: 75%;
+        margin: auto;
+    }
+    #slideone-div {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+    }
+    #slide-two-div {
+        display: flex;
+    }
+    #slideone-left {
+        grid-column: 1/7;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #main-hello, #main-header, #main-mission {
+        text-shadow: 0 0 5px black;
+        margin: 0px;
+    }
+    #main-hello, #main-mission, #main-resume-button {
+        font-size: 12px;
+    }
+    #main-header {
+        font-size: 30px;
+    }
+    #slideone-right {
+        grid-column: 7/-1;
+        width: 100%;
+        display: flex;
+    }
+    #main-slideone-img {
+        margin: auto;
+        width: 70%;
+        border: solid 2px black;
+        border-radius: 50%;
+    }
+    #main-resume-button {
+        margin-top: 15px;
+        width: 100px;
+        border-radius: 25px;
+        padding: 10px;
+        color: black;
+        background-color: white;
+    }
+    #main-resume-button:hover {
+        color: white;
+        background-color: turquoise;
+    }
+    #slidetwo-left, #slidetwo-center, #slidetwo-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slidetwo-img {
+        margin-top: 30px;
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid black;
+        box-shadow: 0 0 5px black;
+    }
+    .slidetwo-header {
+        font-size: 12px;
+        padding: 10px;
+        height: 15px;
+    }
+    .slidetwo-button {
+        background-color: white;
+        color: turquoise;
+        width: 20%;
+        padding: 7px;
+        border-radius: 25px;
+        box-shadow: 1px 1px 5px black;
+        text-align: center;
+        font-size: 10px;
+    }
+    .slidetwo-button:hover {
+        background-color: turquoise;
+        color: white;
+    }
+    .prev, .next {
+        display: none;
+    }
+    .dot {
+        display: none;
+    }
+    #main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin-top: 50px;
+    }
+    #main-text > h2 {
+        font-size: 20px;
+    }
+    #main-text > p {
+        font-size: 10px;
+    }
+    h2, p {
+        margin: 0px;
+        text-shadow: 0 0 6px black;
+        text-align: center;
+    }
+    b {
+        color: turquoise;
+    }
+    h6 {
+        text-align: center;
+        font-size: 8px;
+        text-shadow: 0 0 6px black;
+    }
+    #word-art-div {
+        display: none;
+    }
+    #about-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about-profile {
+        width: 45%;
+        margin: 20px;
+        border-radius: 50%;
+        border: solid 2px black;
+        box-shadow: 0 0 10px black;
+    }
+    #about-header {
+        margin-top: 10px;
+    }
+    #about-text-box {
+        width: 80%;
+        padding: 15px;
+    }
+    .about-text {
+        text-align: justify;
+        padding: 10px;
+    }
+    #about-photo-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .about-photo {
+        display: block;
+        margin: 10px;
+        border: rgba(0,0,0,0.8);
+        box-shadow: 0 0 15px black;
+        border-radius: 10px 10px 10px 10px;
+        max-width: 10%;
+        width: auto;
+        height: auto;
+    }
+    #about-quote > p {
+        padding: 15px;
+    }
+    #about-quote-text {
+        font-size: 15px;
+    }
+    #main-about {
+        background-color: rgba(0,0,0,0.25);
+        border-radius: 10px 10px 10px 10px;
+    }
+    #contact-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    #contact-header {
+        font-size: 30px;
+        margin: 0;
+        text-shadow: 0 0 10px black;
+    }
+    #contact-subheader {
+        font-size: 15px;
+    }
+    #contact-form-div {
+        margin: 50px;
+        width: 100%;
+    }
+    #contact-icon {
+        display: none;
+    }
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 30px;
+        color: black;
+    }
+    #form-message {
+        height: 150px;
+    }
+    #contact-form-button {
+        width: 100%;
+        padding: 20px;
+        margin-top: 25px;
+        border-radius: 30px;
+        background-image: linear-gradient(to bottom right, turquoise, violet);
+    }
+    #contact-form-button:hover {
+        background-image: linear-gradient(to bottom right, violet, turquoise);
+    }
+    #projects-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-demo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 5px black;
+        border-radius: 5px;
+    }
+    .project-img {
+        width: 100%;
+    }
+    .project-p {
+        text-align: justify;
+        padding: 10px;
+    }
+    .project-skills {
+        padding: 10px;
+        margin: 0px;
+    }
+    .project-button {
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+        border-color: rgba(0,0,0,0.1);
+    }
+    .project-button:hover {
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+/*Tablet responsive design*/
+@media only screen and (min-width: 641px) {
+    nav {
+            text-shadow: 0 0 4px black;
+    }
+    .page-nav {
+            width: 50%;
+    }
+    a {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 18px;
+    }
+    #slideone-left {
+        height: 500px;
+    }
+    #slidetwo-div {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+    }
+    #slidetwo-left {
+        grid-column: 1/5;
+        height: 500px;
+    }
+    #slidetwo-center {
+        grid-column: 5/9;
+    }
+    #slidetwo-right {
+        grid-column: 9/-1;
+    }
+    .slide-two-img {
+        margin-top: 0px;
+    }
+    .slidetwo-button:hover {
+        background-color: turquoise;
+        color: white;
+    }
+    .prev, .next {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: turquoise;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+    .not-active {
+        display: none;
+    }
+    .active-slide {
+        display: block;
+    }
+    .active-page {
+        font-size: 18px;
+    }.mySlides {
+        width: 60%;
+    }
+    #slideone-div, #slidetwo-div {
+        grid-gap: 15px;
+    }
+    #main-hello, #main-mission, #main-resume-button {
+        font-size: 18px;
+    }
+    #main-resume-button {
+        width: 150px;
+    }
+    .slidetwo-header {
+        font-size: 15px;
+        padding: 15px;
+        height: 25px;
+    }
+    .slidetwo-button {
+        width: 40%;
+        padding: 8px;
+        font-size: 10px;
+    }
+    #main-text > h2 {
+        font-size: 30px;
+    }
+    #main-text > p {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 10px;
+    }
+    #about-quote-text {
+        font-size: 25px;
+    }
+}
+/*Desktop responsive design*/
+@media only screen and (min-width: 1011px) {
+    nav {
+                text-shadow: 0 0 6px black;
+    }
+    .icon-nav {
+                width: 10%;
+    }
+    #slideone-div, #slidetwo-div {
+        grid-gap: 20px;
+    }
+    #slideone-left {
+        height: 750px;
+    }
+    #main-hello, #main-mission, #main-resume-button {
+        font-size: 24px;
+    }
+    #main-header {
+        font-size: 55px;
+    }
+    #slidetwo-left {
+        height: 750px;
+    }
+    .slidetwo-header {
+        font-size: 20px;
+        padding: 20px;
+        height: 40px;
+    }
+    .slidetwo-button {
+        width: 75px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    #main-text {
+        margin-top: 100px;
+    }
+    #main-text > h2 {
+        font-size: 40px;
+    }
+    #main-text > p {
+        font-size: 30px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+    #main-about {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    #word-art-div {
+        display: block;
+        grid-column: 6/-1;
+        height: 100%;
+    }
+    #word-art {
+        width: 100%;
+        height: 100%;
+    }
+    #about-div {
+        grid-column: 1/6;
+    }
+    #about-text-box {
+        position: relative;
+        height: 50%;
+        max-height: 500px;
+        overflow: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: black;
+        border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: turquoise;
+        border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: gray;
+    }
+    #about-quote-text {
+        font-size: 30px;
+    }
+    #contact-header {
+        font-size: 40px;
+    }
+    #contact-subheader {
+        font-size: 20px;
+    }
+    #contact-form-div {
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
+    }
+    #contact-icon {
+        display: block;
+        grid-column: 1/2;
+        margin: auto;
+    }
+    #contact-icon > img {
+        width: 100%;
+        height: 100%;
+        filter: invert(100%);
+    }
+    #contact-form {
+        grid-column: 2/3;
+    }
+    #projects-div {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 25px;
+        align-items: unset;
+    }
+    .project-demo {
+        width: 100%;
+    }
+    #project-one, #project-three {
+        grid-column: 1/7;
+    }
+    #project-two, #project-four {
+        grid-column: 7/-1;
+    }
+}

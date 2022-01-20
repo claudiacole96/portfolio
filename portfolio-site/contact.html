@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/43b0482c96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Portfolio Site</title>
+</head>
+<body>
+    <nav>
+        <ul class="page-nav">
+            <a href="./index.html">Claudia Evans</a>
+            <a href="./about.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a class="active-page" href="./contact.html">Contact</a>
+        </ul>
+        <ul class="icon-nav">
+            <a href="https://www.linkedin.com/in/claudiacole96/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/claudiacole1996"><i class="fab fa-facebook-square"></i></a>
+        </ul>
+    </nav>
+    <main id="contact-main">
+        <h1 id="contact-header">Want to know more?</h1>
+        <h2 id="contact-subheader">Typically responds within 48 hours.</h2>
+        <div id="contact-form-div">
+            <div id="contact-icon">
+                <img src="./images/email-clipart.png" alt="">
+            </div>
+            <form id="contact-form" action="https://formsubmit.co/claudiacole1996@gmail.com" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <input type="text" name="message" id="form-message" placeholder="What can I do for you?" required>
+                <button type="submit" id="contact-form-button">SEND</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h6>Your future developer 2021</h6>
+    </footer>
+</body>
+</html>
