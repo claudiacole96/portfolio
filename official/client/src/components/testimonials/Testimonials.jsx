@@ -1,14 +1,16 @@
 import "./testimonials.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export default function Testimonials() {
+export default function Testimonials({darkmode}) {
 
     const data = [
         {
             id: "1",
             featured: false,
             img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            icon: "assets/down.png",
-            name: "John",
+            icon: faInstagram,
+            name: "@JohnSmith65",
             title: "CEO",
             description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs",
         },
@@ -16,8 +18,8 @@ export default function Testimonials() {
             id: "2",
             featured: true,
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkuYSHG0_bUUHWf_CNNdIgovMMcAxkTx1R4Q&usqp=CAU",
-            icon: "assets/down.png",
-            name: "Jane",
+            icon: faFacebook,
+            name: "@JaneOfficial",
             title: "Entreprenuer",
             description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs",
         },
@@ -25,25 +27,25 @@ export default function Testimonials() {
             id: "3",
             featured: false,
             img: "https://miro.medium.com/max/785/0*Ggt-XwliwAO6QURi.jpg",
-            icon: "assets/down.png",
-            name: "Sam",
+            icon: faTwitter,
+            name: "@SamsSolutions",
             title: "Business Owner",
             description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs",
         },
     ];
     return (
-        <div className="testimonials" id="testimonials">
+        <div className={"testimonials " + (darkmode && "dark")} id="testimonials">
             <h1>Testimonials</h1>
                 <div className="container">
                     {data.map((d) => (
-                        <div className={d.featured ? "card featured" : "card"}>
+                        <div className={"card " + (d.featured && "featured") + " " + (darkmode && " dark")}>
                             <div className="top">
                                 <img src="assets/down-arrow.png" alt="" className="left"/>
                                 <img src={d.img} alt="" className="user"/>
-                                <img src={d.icon} alt="" className="right"/>
+                                <FontAwesomeIcon icon={d.icon} className="right"/>
                             </div>
-                            <div className="center">
-                            {d.description}
+                            <div className={"center " + (darkmode && "dark")}>
+                                {d.description}
                             </div>
                             <div className="bottom">
                                 <h3>{d.name}</h3>

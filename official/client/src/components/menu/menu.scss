@@ -3,7 +3,7 @@
 .menu {
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: $palletColor1;
     position: fixed;
     top: 0;
     right: -300px;
@@ -13,6 +13,10 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+
+    &.dark {
+        background-color: $palletColor4;
+    }
 
     &.active{
         right: 0;
@@ -24,8 +28,12 @@
         list-style: none;
         font-size: 30px;
         font-weight: 200;
-        color: white;
+        color: $palletColor3;
         width: 60%;
+
+        &.dark {
+            color: $palletColor1;
+        }
 
         li {
             margin-bottom: 25px;
@@ -38,6 +46,13 @@
 
             &:hover {
                 font-weight: 500;
+            }
+
+            &.darkmode-icon {
+                margin: 50px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }

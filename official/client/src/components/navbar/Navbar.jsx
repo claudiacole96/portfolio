@@ -1,18 +1,25 @@
-import "./navbar.scss"
+import "./navbar.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 //import icons from font awesome
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen, darkmode }) {
     return (
-        <div className={"navbar " + (menuOpen && "active")}>
+        <div className={"navbar " + (menuOpen && "active ") + (darkmode && "dark")}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Logo</a>
                     <div className="itemContainer">
-                        <i className="icon"/>
-                        <span>423-362-6595</span>
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faPhone} />
+                        </div>
+                        <span>123-456-7890</span>
                     </div>
                     <div className="itemContainer">
-                        <i className="icon"/>
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faEnvelope} /> 
+                        </div>
                         <span>claudiacoledev@gmail.com</span>
                     </div>
                 </div>

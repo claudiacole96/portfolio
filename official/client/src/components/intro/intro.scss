@@ -1,8 +1,13 @@
 @import "../../global.scss";
 
 .intro {
-    background-color: white;
+    background-color: $palletColor3;
     display: flex;
+
+    &.dark {
+        background-color: $palletColor1;
+        color: $palletColor3;
+    }
 
     @include mobile {
         flex-direction: column;
@@ -16,22 +21,24 @@
         .imgContainer {
             width: 700px;
             height: 700px;
-            background-color: crimson;
+            margin: 30px 0;
+            background-color: $palletColor4;
             border-radius: 50%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: flex-end;
             float: right;
 
             @include mobile {
-                align-items: flex-start;
+                justify-content: flex-start;
             }
 
             img {
                 height: 90%;
 
                 @include mobile {
-                    height: 50%;
+                    height: 40%;
                 }
             }
         }
@@ -69,11 +76,12 @@
 
                 @include mobile {
                     font-size: 20px;
+                    margin: 0 50px;
                 }
 
                 span {
                     font-size: inherit;
-                    color: crimson;
+                    color: $palletColor4;
                 }
 
                 .ityped-cursor {

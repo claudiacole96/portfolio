@@ -1,8 +1,9 @@
-import "./menu.scss"
+import "./menu.scss";
+import React, { useState, useEffect } from "react";
 
-export default function Menu({ menuOpen, setMenuOpen}) {
+export default function Menu({ menuOpen, setMenuOpen, darkmode}) {
     return(
-        <div className={"menu " + (menuOpen && "active")}>
+        <div className={"menu " + (menuOpen && "active ") + (darkmode && "dark")}>
             <ul>
                 <li onClick={() => setMenuOpen(false)}>
                     <a href="#intro">Home</a>

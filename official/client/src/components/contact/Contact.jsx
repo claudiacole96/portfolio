@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./contact.scss"
 
-export default function Contact() {
+export default function Contact({darkmode}) {
     const [message, setMessage] = useState(false);
 
     const handleSubmit = (e) => {
@@ -9,7 +9,7 @@ export default function Contact() {
         setMessage(true);
     }
     return (
-        <div className="contact" id="contact">
+        <div className={"contact " + (darkmode && "dark")} id="contact">
             <div className="left">
                 <img src="assets/handshake-background.jpg" alt="" />
             </div>

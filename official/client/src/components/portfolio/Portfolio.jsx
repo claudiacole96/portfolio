@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from 'react';
 import PortfolioList from "../portfolioList/PortfolioList";
 
-export default function Portfolio() {
+export default function Portfolio({darkmode}) {
 
     const [selected, setSelected] = useState("featured");
     const [projects, setProjects] = useState([]);
@@ -15,20 +15,20 @@ export default function Portfolio() {
         },
         {
             id: "web",
-            title: "Web App"
+            title: "Web Design"
         },
         {
-            id: "mobile",
-            title: "Mobile App"
+            id: "react",
+            title: "React App"
         },
         {
-            id: "design",
-            title: "Designing"
+            id: "api",
+            title: "API"
         },
         {
-            id: "brand",
-            title: "Branding"
-        }
+            id: "blog",
+            title: "Blog"
+        },
     ];
 
     function getProjects(portfolioFilter) {
@@ -47,13 +47,13 @@ export default function Portfolio() {
             case "web":
                 getProjects("web");
                 break;
-            case "mobile":
+            case "react":
                 getProjects("mobile");
                 break;
-            case "design":
+            case "api":
                 getProjects("design");
                 break;
-            case "brand":
+            case "blog":
                 getProjects("brand");
                 break;
             default:
@@ -62,7 +62,7 @@ export default function Portfolio() {
     }, [selected]);
 
     return (
-        <div className="portfolio" id="portfolio">
+        <div className={"portfolio " + (darkmode && "dark")} id="portfolio">
             <h1>Portfolio</h1>
             <ul>
                 {list.map((item) => (

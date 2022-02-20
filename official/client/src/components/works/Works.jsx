@@ -1,31 +1,39 @@
 import { useState } from "react"
 import "./works.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil, faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 
-export default function Works() {
+export default function Works({darkmode}) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const data = [
         {
             id: "1",
-            icon: "https://img.favpng.com/10/2/21/computer-icons-at-sign-symbol-clip-art-png-favpng-ybA5V2LdzFa7P7ey3FQMc5fLy.jpg",
-            title: "Something1",
-            description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown",
-            img: "https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/5e9ccde6e014f93547a7a86f_5e8668c4f6f4ab79d83d9570_biznus.jpeg",
+            icon: faPencil,
+            title: "My Blog",
+            description: "Check out this blog on life with coding, current ideas, upcoming projects, and the honest struggles when a developer is stuck missing a semi-colon.",
+            img: "assets/blog-template.jpg",
+            span: "Check Out Blog",
+            link: "",
         },
         {
             id: "2",
-            icon: "https://i.pinimg.com/originals/02/cd/6d/02cd6d546a9c9d1ab35b487f82df16f7.png",
-            title: "Something2",
-            description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown",
-            img: "https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/5e9ccde6e014f93547a7a86f_5e8668c4f6f4ab79d83d9570_biznus.jpeg",
+            icon: faLaptopCode,
+            title: "Portfolio Content",
+            description: "Watch the youtube videos on this channel showing off the projects within this portfolio on their purpose, build, unique qualities, and more.",
+            img: "assets/youtube-background.jpg",
+            span: "Visit Channel",
+            link: "https://www.youtube.com",
         },
         {
             id: "3",
-            icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/ProhibitionSign2.svg/1200px-ProhibitionSign2.svg.png",
-            title: "Something3",
-            description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown",
-            img: "https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/5e9ccde6e014f93547a7a86f_5e8668c4f6f4ab79d83d9570_biznus.jpeg",
+            icon: faCode,
+            title: "Github Commits",
+            description: "This website uses all the strengths from HTML5, CSS, JavaScript, React.JS, Express.JS, MySQL database, and more. Click the link below to take a look at the code that went to this project and others.",
+            img: "assets/coding-screenshot.png",
+            span: "See More...",
+            link: "https://github.com/claudiacole96/portfolio",
         },
     ];
 
@@ -35,23 +43,23 @@ export default function Works() {
         : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0)
     }
     return (
-        <div className="works" id="works">
+        <div className={"works " + (darkmode && "dark")} id="works">
             <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
                 {data.map((d) => (
                     <div className="container">
-                        <div className="item">
+                        <div className={"item " + (darkmode && "dark")}>
                             <div className="left">
                                 <div className="leftContainer">
                                     <div className="imgContainer">
-                                        <img src={d.icon} alt="" />
+                                        <FontAwesomeIcon icon={d.icon}/>
                                     </div>
                                     <h2>{d.title}</h2>
                                     <p>{d.description}</p>
-                                    <span>Projects</span>
+                                    <a href={d.link}>{d.span}</a>
                                 </div>
                             </div>
                             <div className="right">
-                                <img src="https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/5e9ccde6e014f93547a7a86f_5e8668c4f6f4ab79d83d9570_biznus.jpeg" alt="" />
+                                <img src={d.img} alt="" />
                             </div>
                         </div>
                     </div>

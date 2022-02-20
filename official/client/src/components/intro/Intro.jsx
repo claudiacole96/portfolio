@@ -2,7 +2,7 @@ import "./intro.scss"
 import { init } from 'ityped'
 import { useEffect, useRef } from "react"
 
-export default function Intro() {
+export default function Intro({darkmode}) {
 
     const textRef = useRef();
 
@@ -11,12 +11,12 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Full Stack Web Developer", "Designer", "Store Creator"]
+            strings: [" Frontend Designer", " Backend Developer", " Responsive Web App", "n Online Store"]
         })
     },[]);
 
     return (
-        <div className="intro" id="intro">
+        <div className={"intro " + (darkmode && "dark")} id="intro">
             <div className="left">
                 <div className="imgContainer">
                     <img src="assets/headshot.png" alt="" />
@@ -26,7 +26,7 @@ export default function Intro() {
                 <div className="wrapper">
                     <h2>Hi There, I'm</h2>
                     <h1>Claudia Evans</h1>
-                    <h3>Certified <span ref={textRef}></span></h3>
+                    <h3>Do you need a<span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png" alt="" />

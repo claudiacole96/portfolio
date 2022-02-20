@@ -20,4 +20,24 @@
             scroll-snap-align: start;
         }
     }
+
+    .iconContainer {
+        .darkmodeIcon {
+            color: black;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 40px;
+            font-size: 30px;
+            cursor: pointer;
+
+            &.dark {
+                color: white;
+            }
+
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
 }

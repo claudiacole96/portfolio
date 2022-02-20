@@ -1,16 +1,22 @@
 @import "../../global.scss";
 
 .testimonials {
-    background-color: white;
+    background-color: $palletColor3;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &.dark {
+        background-color: $palletColor1;
+        color: $palletColor3;
+    }
 
     @include mobile {
         justify-content: space-around;
     }
 
     h1 {
+        margin-top: 30px;
         font-size: 50px;
         overflow: hidden;
 
@@ -34,12 +40,18 @@
             width: 250px;
             height: 70%;
             border-radius: 10px;
-            box-shadow: 0px 0px 15px -8px black;
+            background-color: $white;
+            box-shadow: 0px 0px 15px -8px $palletColor1;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 20px;
             transition: all 1s ease;
+
+            &.dark {
+                background-color: $palletColor5;
+                color: $palletColor1;
+            }
 
             @include mobile {
                 height: 180px;
@@ -89,7 +101,12 @@
             .center {
                 padding: 10px;
                 border-radius: 10px;
-                background-color: rgb(250, 244, 245);
+                background-color: $palletColor5;
+
+                &.dark {
+                    background-color: $palletColor1;
+                    color: $palletColor3;
+                }
 
                 @include mobile {
                     font-size: 12px;
@@ -111,7 +128,7 @@
                     }
                 }
                 h4 {
-                    color: rgb(119, 117, 117);
+                    color: $palletColor1;
 
                     @include mobile {
                         font-size: 13px;
