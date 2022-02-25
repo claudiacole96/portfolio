@@ -1,0 +1,128 @@
+.resultBox {
+    background-color: #D9CAB3;
+    height: 80%;
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 4px black;
+
+    @media (min-width: 1000px) {
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .results {
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .icons {
+
+            .likes {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    color: black;
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    &.selected {
+                        color: #5E0B15;
+                    }
+
+                    span {
+                        font-size: 10px;
+                        padding: 3px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-style: italic;
+                    }
+                }
+            }
+            .flag {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            text-align: justify;
+            color: black;
+
+            @media (min-width: 1000px) {
+                font-size: 20px;
+                margin: 0 25px;
+            }
+
+            &.removed {
+                color: #5E0B15;
+                font-style: italic;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+
+        .dice {
+            position: absolute;
+            bottom: 15px;
+            font-size: 20px;
+            transition: all 1s ease;
+            cursor: pointer;
+
+            &:hover {
+                font-size: 20px;
+                -webkit-animation:spin 2s linear infinite;
+                -moz-animation:spin 2s linear infinite;
+                animation:spin 2s linear infinite;
+            }
+
+            @-moz-keyframes spin { 
+                100% { -moz-transform: rotate(360deg); } 
+            }
+            @-webkit-keyframes spin { 
+                100% { -webkit-transform: rotate(360deg); } 
+            }
+            @keyframes spin { 
+                100% { 
+                    -webkit-transform: rotate(360deg); 
+                    transform:rotate(360deg); 
+                } 
+            }
+        }
+
+
+    }
+
+    button {
+        margin: 10px 0;
+        width: 70%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #5E0B15;
+        color: #D9CAB3;
+        cursor: pointer;
+    }
+}

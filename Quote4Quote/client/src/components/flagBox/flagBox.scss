@@ -1,0 +1,75 @@
+    .flagBoxDiv {
+        height: 60%;
+        width: 90%;
+        z-index: 1;
+        bottom: -100vh;
+        background-color: black;
+        opacity: 0.95;
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 1s ease;
+        color: #D9CAB3;
+
+        @media (min-width: 1000px) {
+            width: 65%;
+        }
+    
+        &.open {
+            bottom: 0;
+        }
+    
+        .closeFlag {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            cursor: pointer;
+        }
+    
+        .flagLogo {
+            position: absolute;
+            top: 40px;
+            font-size: 40px;
+            color: #e77885;
+
+            @media (min-width: 1000px) {
+                font-size: 60px;
+            }
+        }
+    
+        .verification {
+            width: 80%;
+    
+            h4 {
+                text-align: center;
+
+                @media (min-width: 1000px) {
+                    font-size: 27px;
+                }
+            }
+            .note {
+                color: #e77885;
+                font-size: 15px;
+                font-style: italic;
+                text-align: justify;
+
+                @media (min-width: 1000px) {
+                    font-size: 25px;
+                }
+            }
+        }
+    
+        button {
+            width: 40%;
+            position: absolute;
+            bottom: 40px;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: #5E0B15;
+            color: #D9CAB3;
+            cursor: pointer;
+        }
+    }

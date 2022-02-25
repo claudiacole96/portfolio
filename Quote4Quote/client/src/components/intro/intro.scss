@@ -1,0 +1,39 @@
+.introBox {
+    background-color: #D9CAB3;
+    height: 80%;
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 4px black;
+
+    @media (min-width: 1000px) {
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        margin: 0 30px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        margin: 10px 0;
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #5E0B15;
+        color: #D9CAB3;
+        cursor: pointer;
+    }
+}

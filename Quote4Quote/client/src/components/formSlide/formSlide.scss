@@ -1,0 +1,22 @@
+.formSlide {
+    background-color: #5E0B15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .slider {
+        height: 80%;
+        display: flex;
+        position: absolute;
+        left: 0vw;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease;
+        }
+    }
+}
